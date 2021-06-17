@@ -1,6 +1,6 @@
 import { SearchTargetQuery } from './search-target-query.model'
 
-export interface VideoChannelsSearchQuery extends SearchTargetQuery {
+export interface VideoPlaylistsSearchQuery extends SearchTargetQuery {
   search: string
 
   start?: number

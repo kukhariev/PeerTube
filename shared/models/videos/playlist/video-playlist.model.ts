@@ -8,6 +8,8 @@ export interface VideoPlaylist {
   uuid: string
   isLocal: boolean
 
+  url: string
+
   displayName: string
   description: string
   privacy: VideoConstant<VideoPlaylistPrivacy>

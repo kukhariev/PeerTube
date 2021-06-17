@@ -15,6 +15,8 @@ export class VideoPlaylist implements ServerVideoPlaylist {
   uuid: string
   isLocal: boolean
 
+  url: string
+
   displayName: string
   description: string
   privacy: VideoConstant<VideoPlaylistPrivacy>

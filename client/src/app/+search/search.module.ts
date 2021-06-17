@@ -5,8 +5,10 @@ import { SharedMainModule } from '@app/shared/shared-main'
 import { SharedSearchModule } from '@app/shared/shared-search'
 import { SharedUserSubscriptionModule } from '@app/shared/shared-user-subscription'
 import { SharedVideoMiniatureModule } from '@app/shared/shared-video-miniature'
+import { SharedVideoPlaylistModule } from '@app/shared/shared-video-playlist'
 import { SearchService } from '../shared/shared-search/search.service'
 import { ChannelLazyLoadResolver } from './channel-lazy-load.resolver'
+import { PlaylistLazyLoadResolver } from './playlist-lazy-load.resolver'
 import { SearchFiltersComponent } from './search-filters.component'
 import { SearchRoutingModule } from './search-routing.module'
 import { SearchComponent } from './search.component'
@@ -21,7 +23,8 @@ import { VideoLazyLoadResolver } from './video-lazy-load.resolver'
     SharedFormModule,
     SharedActorImageModule,
     SharedUserSubscriptionModule,
-    SharedVideoMiniatureModule
+    SharedVideoMiniatureModule,
+    SharedVideoPlaylistModule
   ],
 
   declarations: [
@@ -36,7 +39,8 @@ import { VideoLazyLoadResolver } from './video-lazy-load.resolver'
   providers: [
     SearchService,
     VideoLazyLoadResolver,
-    ChannelLazyLoadResolver
+    ChannelLazyLoadResolver,
+    PlaylistLazyLoadResolver
   ]
 })
 export class SearchModule { }
